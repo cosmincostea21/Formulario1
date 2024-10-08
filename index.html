@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action ="procesa.php" method="post" > <!--Dos metodos get muestra lo que envia por url, para mas info y contraseñas post-->
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <p> 
+            <label for="nombre"> Nombre: </label>
+            <input id="nombre" type="text" name="nombre" >     
+        </p>
+
+
+        <p> 
+            <label for="apellidos">Apellidos: </label> 
+            <input id="apellidos" type="text" name="apellidos"> 
+        </p>
+    </fieldset>        
+
+    <input type="submit" value="Enviar">
+</body>
+</html>
